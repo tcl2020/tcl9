@@ -1913,6 +1913,7 @@ typedef struct Command {
 #define CMD_REDEF_IN_PROGRESS	0x10
 #define CMD_VIA_RESOLVER	0x20
 #define CMD_DEAD		0x40
+#define CMD_NAMED_PARAMETERS    0x80
 
 /*
  *----------------------------------------------------------------

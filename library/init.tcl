@@ -770,3 +770,13 @@ proc tcl::CopyDirectory {action src dest} {
     }
     return
 }
+
+if {![interp issafe]} {
+    # tcl2020 configuration
+    namespace eval ::tcl2020 {
+	variable info
+	set info(version) "2.0.0"
+	variable features
+	set features(named_parameters) "1.0.0"
+    }
+}
